@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Batik - Batik Nusantara</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Batik Nusantara</h1>
+    <p>Koleksi Galeri Batik Nusantara</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Tentang Batik</a></li>
+      <li><a href="motif.html">Motif</a></li>
+      <li><a href="sejarah.html">Sejarah</a></li>
+      <li><a href="gallery.html" class="active">Galeri</a></li>
+      <li><a href="kontak.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="gallery">
+      <div class="card">
+        <img src="images/batik parang.jpg" alt="Batik Parang">
+        <h3>Batik Parang</h3>
+      </div>
+
+      <div class="card">
+        <img src="images/batik kawung.jpg" alt="Batik Kawung">
+        <h3>Batik Kawung</h3>
+      </div>
+
+      <div class="card">
+        <img src="images/batik mega mendung.png" alt="Batik Mega Mendung">
+        <h3>Batik Mega Mendung</h3>
+      </div>
+
+      <div class="card">
+        <img src="images/batik lasem.jpg" alt="Batik Lasem">
+        <h3>Batik Lasem</h3>
+      </div>
+
+      <div class="card">
+        <img src="images/batik simbut.jpg" alt="Batik Simbut">
+        <h3>Batik Simbut</h3>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal untuk gambar -->
+  <div id="modal" class="modal">
+    <span id="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="caption"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 Batik Nusantara</p>
+  </footer>
+</body>
+</html>

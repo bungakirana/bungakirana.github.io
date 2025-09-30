@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Batik Nusantara</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Batik Nusantara</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Tentang Batik</a></li>
+        <li><a href="motif.html">Motif</a></li>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+        <li><a href="kontak.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Konten utama -->
+  <main>
+    <section class="card">
+      <h2>Kontak Kami</h2>
+      <p>Hubungi kami untuk informasi lebih lanjut mengenai Batik Nusantara.</p>
+      
+      <!-- Info kontak -->
+      <div class="contact-info">
+        <p><strong>Alamat:</strong> Jl. Terusan Ikan Piranha No.50, Malang</p>
+        <p><strong>Telepon:</strong> 0341-478195</p>
+        <p><strong>Email:</strong> info@batiknusantara.com</p>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.297531421707!2d112.63103287469868!3d-7.929386892093795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629f1b8a28299%3A0xa995c6171f4fe894!2sSMK%20Negeri%205%20Kota%20Malang!5e0!3m2!1sid!2sid!4v1700000000000" 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Batik Nusantara. All rights reserved.</p>
+  </footer>
+
+  <!-- Tombol back-to-top -->
+  <button onclick="topFunction()" id="myBtn" title="Kembali ke atas">↑</button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Back to top button
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    };
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+</html>

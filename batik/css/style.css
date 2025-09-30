@@ -1,0 +1,204 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Body dengan background batik */
+body {
+  background: url("../images/background.jpg") repeat; /* path ke gambar */
+  background-size: cover; /* supaya menutup layar */
+  background-attachment: fixed; /* biar background ikut nge-lock pas scroll */
+  color: #3e2723; /* coklat tua agar kontras */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: red;
+  color: gold; /* warna teks header emas */
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 0 0 30px 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: gold; /* judul Batik Nusantara jadi emas */
+}
+
+/* Navbar */
+nav {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: gold; /* menu emas */
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: darkred; /* saat hover jadi merah tua */
+}
+
+/* Card */
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero h2 {
+  color: gold; /* judul hero emas */
+}
+
+.hero p {
+  color: #3e2723; /* biar tetap kontras */
+}
+
+/* Galeri */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #bba21b;
+  color: white; /* teks footer emas */
+  margin-top: 2rem;
+  border-radius: 30px 30px 0 0;
+}
+
+
+
+/* css internal *
+/* Tambahan CSS slider */
+    .slider {
+      position: relative;
+      max-width: 1000px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Tombol navigasi */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    /* Titik indikator */
+    .dots {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .dot {
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      margin: 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .active {
+      background-color: #333;
+    }
+
+    /* === Perbaikan Header dan Teks === */
+    header {
+      background: url("images/background.jpg") center/cover no-repeat !important;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-radius: 0 0 30px 30px;
+    }
+
+    header h1 {
+      color: gold !important;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: gold !important;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: darkred !important;
+    }
+
+    .hero h2 {
+      color: gold !important;
+    }
+    .hero p {
+      color: #3e2723 !important;
+    }
